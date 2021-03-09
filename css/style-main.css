@@ -1565,6 +1565,7 @@ section > .container-fluid {
   }
 }
 /*
+
  * form.less
  * -----------------------------------------------
 */
@@ -6480,8 +6481,10 @@ blockquote p {
   margin-bottom: 20px;
 }
 .widget ul li {
-  margin-bottom: 5px;
-  padding-bottom: 5px;
+  margin-bottom: 1px;
+  padding-bottom: 2px;
+  display: block;
+
 }
 .widget ul.list li,
 .widget .post {
@@ -6748,16 +6751,24 @@ padding-top: 145px;
 }
 #header_txt
 {
-	width: 53%;
+	width:53vw;
 margin: 0 auto;
 text-align: center;	
+}
+@media screen and (max-width:600px){
+  #header_txt
+  {
+    width:100vw;
+  margin: 0 auto;
+  text-align: center;	
+  }
 }
 #header_txt h1{
 	background-color: rgb(0,94,184, 0.75) !important;
 	color: #fff !important;
 	font-weight: 600;
 	letter-spacing: 0px;
-	font-size: 50px;
+	font-size: 3rem;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
