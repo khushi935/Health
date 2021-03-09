@@ -177,7 +177,7 @@ h6,
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   line-height: 1.42857143;
-  color: #333333;
+  color: #000000;
 }
 h1 small,
 h2 small,
@@ -1021,7 +1021,7 @@ section > .container-fluid {
 }
 .menuzord-menu > li > a {
   font-size: 15px;
-  color: #333333;
+  color: #080808;
 }
 .menuzord .menuzord-menu > li.active > a i,
 .menuzord .menuzord-menu > li:hover > a i,
@@ -1069,7 +1069,7 @@ section > .container-fluid {
   padding-left: 15px;
 }
 .menuzord-menu > li > .megamenu .megamenu-row li a i {
-  color: #444;
+  color: rgb(0, 0, 0);
 }
 .menuzord-menu > li > .megamenu .megamenu-row li.active a i,
 .menuzord-menu > li > .menuzord-menu > li > .megamenu .megamenu-row li:hover a i {
@@ -1077,7 +1077,8 @@ section > .container-fluid {
 }
 @media only screen and (max-width: 900px) {
   .menuzord-menu {
-    background: #fff;
+    background: #005eb8;
+    /* opacity:0.5; */
   }
 }
 /* -------- Scrolltofixed ---------- */
@@ -3894,6 +3895,7 @@ fieldset[disabled] .btn-gray.focus {
 }
 .btn-flat {
   border-radius: 0;
+  margin-left: 10rem;
 }
 /* -------- Btn-Default ---------- */
 .btn {
@@ -6807,7 +6809,6 @@ display: inline-block;
 line-height: 1;
 font-weight: 400;
 font-style: normal;
-speak: none;
 text-decoration: inherit;
 text-transform: none;
 text-rendering: auto;
@@ -6868,7 +6869,7 @@ text-rendering: auto;
 {
 	font-size:20px;
 	margin-left: 25px
-	border: unset;
+	/* border: unset; */
 }
 #myTab a:hover{
 	color:#005eb8;

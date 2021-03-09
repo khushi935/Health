@@ -92,12 +92,13 @@
           </div>	
   
 		  <!-- logo div end -->
-            <ul class="menuzord-menu onepage-nav navfont" style="float: right; margin-right: 14%; width:38%;">
+            <ul class="menuzord-menu onepage-nav navfont" >
               <li><a href="index.html">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>             
-              <li><a href="blog_test.html" onclick="blog();">Blog</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#services">Services</a></li>             
+              <li><a href="blog.html" onclick="blog();">Blog</a></li>
 			<li><a href="covid19.html" target="_self" onclick="covid();">Covid-19</a></li>
+      <li><a href="leader.html">Leadership</a></li>
 			<li  class="active"><a href="contact_us.html">Contact</a></li>
             </ul>
             <ul class="list-inline pull-right flip hidden-sm hidden-xs">
@@ -174,16 +175,18 @@
               </div>
               <div class="form-group">
                 <input name="form_botcheck" class="form-control" type="hidden" value="">
-                <button type="submit" onclick="submitToAPI(event)" class="btn btn-flat btn-theme-colored text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px" data-loading-text="Please wait...">Contact Us</button>
+                <button type="submit" onclick="submitToAPI(event)" class="btn btn-flat btn-theme-colored text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px" data-loading-text="Please wait..." ><a href="thankyou.html" onclick="thankyou()" class="text-white">Contact Us</a></button>
                 <button type="reset" class="btn btn-flat btn-theme-colored text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px">Reset</button>
-              </div>
-			  <div id="success_msg" class="red" style="display:none;">Thank you for getting in touch! We have received your message and would like to thank you for writing to us.</div>
+              <!-- </div>
+			  <div id="success_msg" class="red" style="display:none;">Thank you for getting in touch! We have received your message and would like to thank you for writing to us.</div> -->
             </form>
 
             <!-- Contact Form Validation-->
         
 			<script>
- 
+ function thankyou(){
+   window.location="thankyou.html";
+ }
  function submitToAPI(e) {
        e.preventDefault();
        
@@ -252,7 +255,7 @@
            document.getElementById("contact-us-form").reset();
        //location.reload();
 	   //location.href = "thankyou.html"; 
-	   location.href = "contact_us_test.html#contact";
+	   location.href = "contact_us.html#contact";
 	   document.getElementById("success_msg").style.display = "block";
          },
          error: function () {
@@ -321,7 +324,7 @@
       <div class="container pt-20 pb-20">
         <div class="row">
           <div class="col-md-6">
-            <p class="font-11 text-black-777 m-0">Copyright &copy;2021. All Rights Reserved</p>
+            <p class="font-11 text-muted m-0">Copyright &copy;2021. All Rights Reserved</p>
           </div>          
         </div>
       </div>
