@@ -1047,6 +1047,32 @@ section > .container-fluid {
   color: #fff;
 }
 /* -------- Megamenu-Row ---------- */
+.dropdwn{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-about{
+  display: none;
+  position: absolute;
+  background-color: rgb(0,94,184);
+  min-width: 7rem;
+  padding-left: 5px;
+  margin-left: 7px;
+  z-index: 1;
+}
+.dropdown-about li{
+ padding: 5px;
+}
+.dropdown-about li a{
+  color: white;
+}
+.dropdown-about li a:hover{
+  color:#000;
+}
+.dropdwn:hover .dropdown-about {
+  display: block;
+}
+
 .menuzord-menu > li > .megamenu .megamenu-row li {
   border: 0 none;
   clear: both;
@@ -2357,6 +2383,39 @@ form .error {
   background: rgba(0, 0, 0, 0.3);
 }
 /* -------- Testimonial-Carousel ---------- */
+.twittericon{
+  color: #1084ea;
+  margin: 2rem 1rem;
+  font-size: 3rem;
+}
+.twittericon:hover{
+  color: #0c5ba0;
+}
+.linkedInicon{
+  color: #1084ea;
+  margin: 2rem 1rem;
+  font-size: 3rem;
+}
+.linkedInicon:hover{
+  color: #0c5ba0;
+}
+.mailicon{
+  color: #e63e3e;
+  margin: 2rem 1rem;
+  font-size: 3rem;
+}
+.mailicon:hover{
+  color: #910000;
+}
+@media screen and (max-width:390px){
+.contactusdetail{
+  display: flex;
+  justify-content: center;
+}
+.linkedInicon .mailicon .twittericon{
+  margin-top:2px;
+}
+}
 .testimonial-carousel,
 .testimonial-carousel-style2 {
   /* fullwidth */
@@ -6743,7 +6802,7 @@ blockquote p {
 }
 #top_img_bg
 {
-	background:url("../images/bg/bg7.jpg") no-repeat center top;
+	background:url("../images/bg/bg2\ -\ Copy.jpg") no-repeat center top;
 	background-size: cover;
 width: 100%;
 height: 550px;
@@ -6751,8 +6810,8 @@ padding-top: 145px;
 }
 #header_txt
 {
-	width:53vw;
-margin: 0 auto;
+	width:45vw;
+margin: 10px auto;
 text-align: center;	
 }
 @media screen and (max-width:600px){
@@ -6764,11 +6823,11 @@ text-align: center;
   }
 }
 #header_txt h1{
-	background-color: rgb(0,94,184, 0.75) !important;
+	background-color: rgb(0,94,184, 0.7) !important;
 	color: #fff !important;
 	font-weight: 600;
 	letter-spacing: 0px;
-	font-size: 3rem;
+	font-size: 3.5rem;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
@@ -6778,7 +6837,8 @@ text-align: center;
 {
 	font-weight: 600;
 	font-family: 'Raleway', sans-serif;
-	color: #222222 !important;
+	color: #ffffff !important;
+  text-shadow: 5px 5px  15px rgb(0, 41, 129);
 	text-transform: uppercase;
 	font-size: 32px;
 	text-align: center;

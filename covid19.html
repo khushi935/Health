@@ -93,14 +93,20 @@
               <!-- Logo div start-->
               <div class="col-xs-12 col-sm-4 col-md-3">
                 <div class="widget no-border m-0">
-                  <a class="menuzord-brand pull-left flip xs-pull-center mb-15" href="index.html"><img
+                  <a class="menuzord-brand pull-left flip xs-pull-center mb-1 mt-10" href="index.html"><img
                       src="images/bg/symbian_logo.png" alt=""></a>
                 </div>
               </div>
               <!-- logo div end -->
               <ul class="menuzord-menu onepage-nav navfont">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
+                <li class="dropdwn">
+                  <a class="dropbtn" >About&nbsp;<span class="caret"></a>
+                  <ul class="dropdown-about list-unstyled">
+                    <li style="list-style-type: none;"><a href="index.html#about">About Us</a></li>
+                    <li style="list-style-type: none;"><a href="leader.html"  onclick="leadership();">Leadership</a></li>
+                  </ul>
+                </li>
                 <li><a href="index.html#services">Services</a></li>
                 <!--<li><a href="#department">Department</a></li>
               <li><a href="#team">Doctors</a></li>
@@ -108,9 +114,9 @@
               <li><a href="#gallery">Gallery</a></li>-->
               <li><a href="blog.html" onclick="blog();">Blog</a></li>
               <li class="active"><a href="covid19.html" onclick="covid();">Covid-19</a></li>
-              <li ><a href="leader.html">Leadership</a></li>
+              <!-- <li ><a href="leader.html">Leadership</a></li> -->
               <li><a href="contact_us.html" onclick="contactus();">Contact</a></li>
-                  <a class="btn btn-flat text-white border-2px mt-20 font-16" href="https://login.microsoftonline.com"
+                  <a class="btn btn-flat text-white border-2px mt-12 font-16" href="https://login.microsoftonline.com"
                     target="_blank">Login</a>
               </ul>
             </nav>

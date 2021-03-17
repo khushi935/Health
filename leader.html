@@ -91,14 +91,20 @@
               <!-- Logo div start-->
               <div class="col-xs-12 col-sm-4 col-md-3">
                 <div class="widget no-border m-0">
-                  <a class="menuzord-brand pull-left flip xs-pull-center mb-15" href="index.html"><img
+                  <a class="menuzord-brand pull-left flip xs-pull-center mb-1 mt-10" href="index.html"><img
                       src="images/bg/symbian_logo.png" alt=""></a>
                 </div>
               </div>
               <!-- logo div end -->
               <ul class="menuzord-menu onepage-nav navfont">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
+                <li class="dropdwn">
+                  <a class="dropbtn" >About&nbsp;<span class="caret"></a>
+                  <ul class="dropdown-about list-unstyled">
+                    <li style="list-style-type: none;"><a href="index.html#about">About Us</a></li>
+                    <li class="active" style="list-style-type: none;"><a href="leader.html"  onclick="leadership();">Leadership</a></li>
+                  </ul>
+                </li>
                 <li><a href="index.html#services">Services</a></li>
                 <!--<li><a href="#department">Department</a></li>
               <li><a href="#team">Doctors</a></li>
@@ -106,9 +112,9 @@
               <li><a href="#gallery">Gallery</a></li>-->
                 <li><a href="blog.html" onclick="blog();">Blog</a></li>
                 <li><a href="covid19.html" target="_self" onclick="covid();">Covid-19</a></li>
-                <li class="active"><a href="covid19.html">Leadership</a></li>
+                <!-- <li class="active"><a href="covid19.html">Leadership</a></li> -->
                 <li><a href="contact_us.html" onclick="contactus();">Contact</a></li>
-                <a class="btn btn-flat text-white border-2px mt-20 font-16" href="https://login.microsoftonline.com"
+                <a class="btn btn-flat text-white border-2px mt-12 font-16" href="https://login.microsoftonline.com"
                   target="_blank">Login</a>
               </ul>
             </nav>
@@ -117,26 +123,41 @@
       </div>
     </header>
   </div><!-- End Wrapper -->
+  <style>
+.ourteam{
+  font-weight:bolder;
+  font-size:4rem;
+  color:rgb(0, 0, 0)
+}
+.teamtext{
+  color:rgb(0, 94, 184);
+  font-weight:bolder;
+  font-size:2rem
+}
+.bg{
+  background-color:rgba(255, 255, 255, 1) ;
+}
+  </style>
   <!-- Start Main-content -->
   <div class="main-content">
-    <div class="pt-50 bg-theme-colored-darker2">
+    <div class="container-fluid pt-50 bg" style="overflow: hidden;">
       <!-- <div class="card"> -->
-      <div class="row pb-50">
-        <div class="col-sm-6 text-center bg-theme-colored-darker2 mt-40" id="" style="opacity: 0.8;">
-          <h1 class="text-white" >Our Team</h1>
-          <p class="" style="color:rgb(248, 0, 0);font-size:25px">Passionate healthcare experts
+      <div class="row pb-50 text-center">
+        <div class="col-sm-6 text-cente mt-100" id="" >
+          <h1 class="ourteam" >Our Team</h1>
+          <p class="teamtext">Passionate healthcare experts
          </p>
           <!-- </div> -->
         </div><!-- end col-md-12-->
         <div class="col-sm-5">
-          <img src="images/bg/leadership-banner.jpeg" class="image-fluid " style="opacity: 1;">
+          <img src="images/bg/leadership-banner.jpeg" class="image-fluid " style="opacity: 1;box-shadow: 2px 5px 40px rgb(0, 94, 184);">
         </div>
       </div>
     </div>
     <!-- <div class="container outer_inner_page" id="testi_monial"> -->
     <!-- Start Container -->
 
-    <div class="tab-content" id="myTabContent">
+    <div class="container tab-content" id="myTabContent">
       <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div class="outer_lead">
           <h4><b>Mohsin Alvi</b></h4>
