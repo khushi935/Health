@@ -4499,6 +4499,12 @@ blockquote p {
 .funfact.style-1:hover .funfact-title {
   color: #333333;
 }
+@media screen and (max-width:1000px){
+.benefitcard{
+display: block;
+overflow: hidden;
+}
+}
 /*
  * Shortcode: icon-box.less
  * -----------------------------------------------
@@ -6810,24 +6816,41 @@ padding-top: 145px;
 }
 #header_txt
 {
-	width:45vw;
+	width:52vw;
 margin: 10px auto;
 text-align: center;	
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
   #header_txt
   {
     width:100vw;
   margin: 0 auto;
   text-align: center;	
   }
+  #header_txt span#health
+{
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	color: #000000 !important;
+  padding:2px;
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: center;
+}
+#header_txt span#small_txt
+{
+	font-weight: 600;
+	font-size: 14px;
+	text-align: center;	
+  padding:2px;
+  color: #000000 !important;
+}
 }
 #header_txt h1{
 	background-color: rgb(0,94,184, 0.7) !important;
 	color: #fff !important;
-	font-weight: 600;
 	letter-spacing: 0px;
-	font-size: 3.5rem;
+	font-size: 2.6rem;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
@@ -6835,21 +6858,21 @@ text-align: center;
 }
 #header_txt span#health
 {
-	font-weight: 600;
+	font-weight: 700;
 	font-family: 'Raleway', sans-serif;
-	color: #ffffff !important;
-  text-shadow: 5px 5px  15px rgb(0, 41, 129);
+	color: #ffffff;
+  padding:2px;
 	text-transform: uppercase;
-	font-size: 32px;
+	font-size: 30px;
 	text-align: center;
 }
 #header_txt span#small_txt
 {
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 14px;
-	text-align: center;
-	color: #404040 !important;
-	
+	text-align: center;	
+  padding:2px;
+  color: #ffffff;
 }
 .black{
 	color:#000!important;
