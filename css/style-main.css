@@ -1104,7 +1104,15 @@ section > .container-fluid {
 @media only screen and (max-width: 900px) {
   .menuzord-menu {
     background: #005eb8;
-    /* opacity:0.5; */
+    max-height: 600px !important;
+  }
+  .dropdwn{
+    margin-bottom: 6rem;
+  }
+  .dropdown-about{
+    display: block;
+    margin-top: 1rem;
+    margin-left:2rem;
   }
 }
 /* -------- Scrolltofixed ---------- */
@@ -3955,7 +3963,13 @@ fieldset[disabled] .btn-gray.focus {
 }
 .btn-flat {
   border-radius: 0;
-  margin-left: 10rem;
+  margin-left: 7rem;
+}
+@media screen and (max-width:900px){
+  .btn-flat {
+    border-radius:0;
+    margin: 1rem !important;
+  }
 }
 /* -------- Btn-Default ---------- */
 .btn {
@@ -6811,7 +6825,7 @@ overflow: hidden;
 	background:url("../images/bg/bg2\ -\ Copy.jpg") no-repeat center top;
 	background-size: cover;
 width: 100%;
-height: 550px;
+height: 650px !important;
 padding-top: 145px;
 }
 #header_txt
@@ -6831,11 +6845,12 @@ text-align: center;
 {
 	font-weight: 700;
 	font-family: 'Raleway', sans-serif;
-	color: #000000 !important;
+	color: #ffffff !important;
   padding:2px;
 	text-transform: uppercase;
 	font-size: 30px;
 	text-align: center;
+  overflow: hidden;
 }
 #header_txt span#small_txt
 {
@@ -6843,7 +6858,8 @@ text-align: center;
 	font-size: 14px;
 	text-align: center;	
   padding:2px;
-  color: #000000 !important;
+  color: #ffffff !important;
+  overflow: hidden;
 }
 }
 #header_txt h1{
