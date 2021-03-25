@@ -87,29 +87,25 @@
 		  <!-- Logo div start-->
 		  <div class="col-xs-12 col-sm-4 col-md-3">
             <div class="widget no-border m-0">
-              <a class="menuzord-brand pull-left flip xs-pull-center mb-15" href="index.html"><img src="images/bg/symbian_logo.png" alt=""></a>
+              <a class="menuzord-brand pull-left flip xs-pull-center mb-1 mt-10" href="index.html"><img src="images/bg/symbian_logo.png" alt=""></a>
             </div>
           </div>	
-<style>
-.menuzord-menu > li
-{
-	padding-left: 15px!important;
-padding-right: 15px!important;
-}
 </style>		  
 		  <!-- logo div end -->
-            <ul class="menuzord-menu onepage-nav navfont" style="float: right; margin-right: 14%; width:38%;">
+            <ul class="menuzord-menu onepage-nav navfont" >
               <li><a href="index - test.html">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <!--<li><a href="#services">Services</a></li>              -->
-              <li><a href="blog_test.html" onclick="blog();">Blog</a></li>
-			<!--<li><a href="covid19.html" target="_self" onclick="covid();">Covid-19</a></li>-->
-			<li  class="active"><a href="contact_us_test.html">Contact</a></li>
-            </ul>
-            <ul class="list-inline pull-right flip hidden-sm hidden-xs">
-             <li>
-                <!--<a class="btn btn-flat text-white border-2px mt-20 font-16" href="https://login.microsoftonline.com" target="_blank">Login</a>-->
+              <li class="dropdwn">
+                <a class="dropbtn" >About&nbsp;<span class="caret"></a>
+                <ul class="dropdown-about list-unstyled">
+                  <li style="list-style-type: none;"><a href="index - test.html#about">About Us</a></li>
+                  <li style="list-style-type: none;"><a href="leader_test.html"  onclick="leadership();">Leadership</a></li>
+                </ul>
               </li>
+              <li><a href="index - test.html#services">Services</a></li>             
+              <li><a href="blog_test.html" onclick="blog();">Blog</a></li>
+			<!-- <li><a href="covid19.html" target="_self" onclick="covid();">Covid-19</a></li> -->
+			<li  class="active"><a href="contact_us_test.html">Contact</a></li>
+                <a class="btn btn-flat text-white border-2px mt-12 font-16" href="https://login.microsoftonline.com" target="_blank">Login</a>
             </ul>
           </nav>
         </div>
@@ -126,65 +122,63 @@ padding-right: 15px!important;
             <div class="col-md-12"><!-- Start Col-md-8 -->
 			
 				<div class="outer_inner_page"><!-- Start outer_inner_page -->
-				<h3>Contact Us</h3>
+				<!-- <h3>Contact Us</h3> -->
 				<section id="contact">
-      <div class="container pb-sm-10">
-        <div class="row">
-        <div class="row">
-          <div class="col-md-6">
-            <h4>Questions?</h4>
-	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur odio in risus scelerisque convallis. Cras laoreet dignissim tortor in mollis.</p>
-		<h5>Office Location</h5>
-		<p>550 Cochituate Rd,<br> Framingham,<br>
-		MA 01701.<br></p>
-		<h5>Contact Information</h5>
-		<p><b>Phone:</b> <a href="tel:5084017164">(508) 401-7164</a><br>		
-		<b>Email:</b> <a href="mailto:hello@symbianhealth.com">hello@symbianhealth.com</a><br>			
-		
-	</p>
-          </div>
-          <div class="col-md-6">
-            <!--<h3 class="line-bottom mt-0 mb-20 mt-sm-30">Leave Your <span class="text-theme-colored">Comment</span></h3>-->
-            <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur odio in risus scelerisque convallis. Cras laoreet dignissim tortor in mollis.</p>
-            <!-- Contact Form -->
-            <form id="contact-us-form" name="contact_form" class="" method="post">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input name="form_name" id="name-input" class="form-control" type="text" placeholder="Enter First Name" required="">
-					<input type="hidden" id="hidden_domain" value="Symbian contact form">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input name="form_email" id="email-input" class="form-control required email" type="email" placeholder="Enter Email">
-                  </div>
-                </div>
+          <div class="container pb-sm-10">
+            <div class="row">
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Questions?</h4>
+       <p>We are here to help and answer any questions you might have. Looking for general information about our company? You can submit a question or comment in the form below, our expert would reach out to you.</p>
+        <h3>Contact Information</h3>
+        <p><b class="text-theme-colored"><i class="fa fa-phone fa-2x mb-10"></i></b>&nbsp;&nbsp;<a href="tel:5084017164" class="text-black">(508) 401-7164</a><br>		
+        <b  class="text-theme-colored"><i class="fa fa-envelope fa-2x mb-10"></i></b>&nbsp;&nbsp;<a href="mailto:hello@symbianhealth.com" class="text-black">hello@symbianhealth.com</a><br>			
+        <b  class="text-theme-colored"><i class="fa fa-twitter fa-2x mb-10"></i></b>&nbsp;&nbsp;<a href="#" class="text-black">twitter.com</a><br>
+        <b  class="text-theme-colored"><i class="fa fa-linkedin fa-2x"></i></b>&nbsp;&nbsp;<a href="#" class="text-black">linkedIn.com</a><br>
+      </p>
               </div>
-                
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input name="form_subject" id="name-input-2" class="form-control required" type="text" placeholder="Enter Last Name">
+              <div class="col-md-6">
+                <!--<h3 class="line-bottom mt-0 mb-20 mt-sm-30">Leave Your <span class="text-theme-colored">Comment</span></h3>-->
+               <!-- <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur odio in risus scelerisque convallis. Cras laoreet dignissim tortor in mollis.</p>-->
+                <!-- Contact Form -->
+                <form id="contact-us-form" name="contact_form" class="" method="post">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="form_name" id="name-input" class="form-control" type="text" placeholder="Enter First Name" required="">
+              <input type="hidden" id="hidden_domain" value="Symbian contact form">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="form_email" id="email-input" class="form-control required email" type="email" placeholder="Enter Email">
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input name="form_phone" id="phone-input" class="form-control" type="text" placeholder="Enter Phone">
+                    
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="form_subject" id="name-input-2" class="form-control required" type="text" placeholder="Enter Last Name">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="form_phone" id="phone-input" class="form-control" type="text" placeholder="Enter Phone">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <textarea name="form_message" id="description-input" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input name="form_botcheck" class="form-control" type="hidden" value="">
-                <button type="submit" onclick="submitToAPI(event)" class="btn btn-flat btn-theme-colored text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px" data-loading-text="Please wait...">Contact Us</button>
-                <button type="reset" class="btn btn-flat btn-theme-colored text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px">Reset</button>
-              </div>
-			  <div id="success_msg" class="red" style="display:none;">Thank you for getting in touch! We have received your message and would like to thank you for writing to us.</div>
-            </form>
+    
+                  <div class="form-group">
+                    <textarea name="form_message" id="description-input" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input name="form_botcheck" class="form-control" type="hidden" value="">
+                    <button type="submit" onclick="submitToAPI(event)" class="btn btn-flat btn-theme-colored text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px" data-loading-text="Please wait..." ><a href="thankyou.html" onclick="thankyou()" class="text-white">Contact Us</a></button>
+                    <button type="reset" class="btn btn-flat btn-theme-colored text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px">Reset</button>
+                  <!-- </div>
+            <div id="success_msg" class="red" style="display:none;">Thank you for getting in touch! We have received your message and would like to thank you for writing to us.</div> -->
+                </form>
 
             <!-- Contact Form Validation-->
         
